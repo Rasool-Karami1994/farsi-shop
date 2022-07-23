@@ -1,0 +1,99 @@
+.page-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form-control {
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 90%;
+}
+.simple-input {
+  width: 100%;
+  padding: 16px 20px;
+  display: block;
+  color: #444;
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
+}
+.error {
+  margin-top: 8px;
+  color: #fa60a5;
+  font-size: 14px;
+}
+.form-btn {
+  padding: 18px 5px;
+  background-color: var(--main-color);
+  width: 90%;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  margin: 30px 0 0 0;
+  font-size: 16px;
+}
+.disabeled-btn {
+  cursor: not-allowed;
+  opacity: 0.9;
+  padding: 18px 5px;
+  background-color: var(--main-color);
+  width: 90%;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  margin: 30px 0 0 0;
+  font-size: 16px;
+}
+
+form {
+  width: 600px;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 10px;
+}
+.form-h2 {
+  font-size: 45px;
+  font-weight: bolder;
+  color: var(--main-color);
+  margin: 15px 0 15px 0;
+}
+.form-text {
+  font-size: 16px;
+
+  color: var(--main-color);
+  margin: 15px 0 15px 5px;
+  opacity: 0.6;
+}
+label {
+  display: flex;
+  margin-bottom: 3px;
+  font-size: 14px;
+  padding: 3px;
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+input + label {
+  font-weight: bold;
+  display: inline-flex;
+  margin-right: 20px;
+  margin-left: 5px;
+  background-color: #fafbff;
+}
+
+span {
+  font-weight: 700;
+}
+@media screen and (max-width: 600px) {
+  form {
+    width: 90%;
+  }
+}

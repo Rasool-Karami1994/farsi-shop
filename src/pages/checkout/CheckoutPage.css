@@ -1,0 +1,126 @@
+.checkout-card-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-card {
+  border: 1px solid var(--second-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 500px;
+  height: auto;
+  background-color: #fff;
+  justify-content: flex-start;
+  padding: 15px;
+  align-items: center;
+}
+.checkout-content-first {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 90%;
+  border-bottom: 1px solid var(--second-color);
+  padding: 15px 0;
+  margin: 20px 0;
+}
+.checkout-cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 8px 0;
+}
+.checkout-cart-item img {
+  width: 75px;
+  height: 75px;
+  border-radius: 25%;
+  border: 1px solid var(--second-color);
+}
+.checkout-badge {
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid var(--second-color);
+  position: relative;
+  /* top: 70%; */
+  background-color: #fff;
+  left: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -15px;
+}
+
+.checkout-content-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--second-color);
+}
+.checkout-content-second div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.checkout-content-third {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 15px 0;
+  margin: 20px 0;
+}
+
+.place-order-btn {
+  width: 90%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: var(--main-color);
+  cursor: pointer;
+  margin: 20px 0;
+}
+.place-order-btn:hover {
+  transform: scale(0.97);
+}
+.chekout-card-text {
+  position: relative;
+  margin-top: 10px;
+  left: -12%;
+  padding: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .checkout-card {
+    border: 1px solid var(--second-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 390px;
+    height: auto;
+    background-color: #fff;
+    justify-content: flex-start;
+    padding: 15px;
+    align-items: center;
+  }
+  .chekout-card-text {
+    position: relative;
+    left: 0;
+    padding: 10px;
+  }
+}

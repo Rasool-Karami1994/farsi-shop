@@ -1,0 +1,65 @@
+.icons-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 100px;
+}
+.icons-container a {
+  color: var(--second-color);
+  width: 50px;
+  height: 35px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  /* position: fixed;
+  bottom: 0; */
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+}
+.logo-footer {
+  width: 90px;
+  height: 70px;
+  margin: 10px;
+  margin-right: 100px;
+}
+.visa-logo-footer {
+  width: 250px;
+  height: 80px;
+  margin: 10px;
+  margin-right: 100px;
+}
+@media screen and (max-width: 750px) {
+  .logo-footer {
+    margin-right: 15px;
+  }
+  .icons-container {
+    margin-left: 15px;
+  }
+  .visa-logo-footer {
+    width: 110px;
+    height: 70px;
+    margin: 10px;
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .logo-footer {
+    margin-right: 8px;
+  }
+  .icons-container {
+    margin-left: 8px;
+  }
+  .visa-logo-footer {
+    width: 80px;
+    height: 50px;
+    margin: 10px;
+    /* margin-right: 80px; */
+  }
+}
