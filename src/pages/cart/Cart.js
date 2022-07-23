@@ -85,15 +85,15 @@ const Cart = () => {
         </button>
         <section className="cart-list-container">
           <div className="cart-Delivery-box">
-            <h4>Free Delivery for Members</h4>
+            <h4>تحویل رایگان برای اعضا</h4>
             <p>
-              Become a member to get fast and free delivery.{" "}
+              با عضویت در فروشگاه از تحویل رایگان و سریع بهره مند شوید{" "}
               <span>
-                <a href="/signup">JoinUs</a>
+                <a href="/signup">ثبت نام</a>
               </span>{" "}
-              or{" "}
+              |{" "}
               <span>
-                <a href="/login">SignIn</a>
+                <a href="/login">ورود</a>
               </span>
             </p>
           </div>
@@ -135,29 +135,29 @@ const Cart = () => {
                 </div>
               </div>
               <p className="cart-item-price">
-                $ {item.offPrice * item.quantity}
+                {item.offPrice * item.quantity} تومان
               </p>
             </div>
           ))}
         </section>
         <section className="cart-summery-container">
           <div className="cart-summery">
-            <h4>Summary</h4>
+            <h4>جزئیات خرید</h4>
             <div>
-              <p>Price</p>
-              <span>$ {summeryPriceValue}</span>
+              <p>قیمت</p>
+              <span> {summeryPriceValue} تومان</span>
             </div>
             <div>
-              <p>Discount</p>
-              <span>$ {summerydiscountValue}</span>
+              <p>تخفیف</p>
+              <span> {summerydiscountValue} تومان</span>
             </div>
             <div className="cart-summery-text">
-              <p>Total</p>
-              <span>$ {total}</span>
+              <p>قیمت نهایی</p>
+              <span> {total} تومان</span>
             </div>
 
             <Link className="chekout-link" to="/checkout">
-              <button className="checkout-btn">Checkout</button>
+              <button className="checkout-btn">ادامه سفارش</button>
             </Link>
           </div>
         </section>

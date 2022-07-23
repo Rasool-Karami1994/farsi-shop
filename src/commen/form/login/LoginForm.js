@@ -38,7 +38,7 @@ const LoginForm = (props) => {
       console.log(data.name);
       setError(null);
       navigate(-2);
-      toast.success(`Welcome back ${data.name}!`);
+      toast.success(`${data.name}عزیز خوش آمدی`);
     } catch (error) {
       console.log(error.response.data.message);
       setError(error.response.data.message);
@@ -57,18 +57,18 @@ const LoginForm = (props) => {
   return (
     <div className="page-container">
       <form onSubmit={formik.handleSubmit}>
-        <h2 className="form-h2">Welcome back</h2>
-        <p className="form-text">Welcome back! Please enter your detailes.</p>
+        <h2 className="form-h2">خوش آمدید</h2>
+        <p className="form-text">لطفا اطلاعات خود را وارد کنید</p>
 
-        <Input label="Email" name="email" formik={formik} type="email" />
+        <Input label="ایمیل" name="email" formik={formik} type="email" />
 
-        <Input label="Password" name="password" formik={formik} />
+        <Input label="رمزعبور" name="password" formik={formik} />
         <button
           type="submit"
           disabled={!formik.isValid}
           className={!formik.isValid ? "disabeled-btn" : "form-btn"}
         >
-          Sign in
+          ورود
         </button>
       </form>
     </div>

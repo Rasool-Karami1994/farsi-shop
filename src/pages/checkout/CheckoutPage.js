@@ -22,7 +22,7 @@ const CheckoutPage = () => {
             <IoIosArrowBack />
           </button>
           <div className="checkout-card">
-            <h4 className="chekout-card-text">{`Dear ${user.name}, this is your shoping detailes:`}</h4>
+            <h4 className="chekout-card-text">{` ${user.name}عزیز، جزئیات سفارش شما: `}</h4>
             <div className="checkout-content-first">
               {cart.map((item) => (
                 <div className="checkout-cart-item" key={item.id}>
@@ -31,37 +31,37 @@ const CheckoutPage = () => {
                     <img src={item.image} alt={item.name}></img>
                   </div>
                   <p>{item.name}</p>
-                  <p>$ {item.offPrice}</p>
+                  <p> {item.offPrice} تومان</p>
                 </div>
               ))}
             </div>
             <div className="checkout-content-second">
               <div>
-                <p>Subtotal</p>
-                <span>$ {total}</span>
+                <p>کل سبد</p>
+                <span> {total} تومان</span>
               </div>
               <div>
-                <p>Shipping</p>
-                <span>$ 8</span>
+                <p>حمل و نقل</p>
+                <span> 28 تومان</span>
               </div>
             </div>
             <div className="checkout-content-third">
-              <p>Total</p>
-              <span>$ {8 + total} </span>
+              <p>مجموع سفارش</p>
+              <span> {8 + total} تومان</span>
             </div>
             {user ? (
               <button
                 className="place-order-btn"
                 onClick={() => navigate("/bankPage")}
               >
-                Place Order
+                نهایی کردن سفارش
               </button>
             ) : (
               <button
                 className="place-order-btn"
                 onClick={() => navigate("/signup")}
               >
-                Place Order
+                نهایی کردن سفارش
               </button>
             )}
           </div>
@@ -78,10 +78,10 @@ const CheckoutPage = () => {
               className="empty-cart-img"
             ></img>
             <h2 className="empty-cart-h2">
-              Your cart is empty <span>{" : )"}</span>
+              <span>{" ( :"}</span> متاسفانه سبد خرید شما خالیه
             </h2>
             <button className="empty-cart-btn" onClick={redirector}>
-              Go to shopping
+              رفتن به فروشگاه
             </button>
           </div>
         </div>

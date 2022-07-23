@@ -5,13 +5,13 @@ import "./NotFoundPage.css";
 const NotFound = () => {
   return (
     <div className="not-found-container">
-      <h2>lost your way?</h2>
+      <h2>گم شدی؟</h2>
       <h4>
-        sorry we can't find that page, You'll find loads to explore on the home
-        page.
+        متاسفم، صفحه موردنظرتون رو پیدا نکردم. میتونید از صفحه اصلی به هرکجای
+        سایت برید.
       </h4>
       <h3>
-        <Link to="/">Home</Link>
+        <Link to="/">رفتن به فروشگاه</Link>
       </h3>
       <img src={notFoundImg} alt="404"></img>
     </div>

@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 40px;
+  direction: rtl;
 }
 .not-found-container h2 {
   color: var(--main-color);

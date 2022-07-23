@@ -52,7 +52,7 @@ const SignupForm = () => {
       console.log(data);
       setUser(data);
       localStorage.setItem("auth", JSON.stringify(data));
-      toast.success(`Welcome ${data.name}!`);
+      toast.success(`${data.name}خوش آمدی عزیز `);
 
       navigate(-1);
     } catch (error) {
@@ -73,28 +73,28 @@ const SignupForm = () => {
   return (
     <div className="page-container">
       <form onSubmit={formik.handleSubmit}>
-        <h2 className="form-h2">Sign Up</h2>
-        <Input label="Name" name="name" formik={formik} />
-        <Input label="Email" name="email" formik={formik} type="email" />
+        <h2 className="form-h2">ثبت نام</h2>
+        <Input label="نام" name="name" formik={formik} />
+        <Input label="ایمیل" name="email" formik={formik} type="email" />
         <Input
-          label="Phone Number"
+          label="شماره تماس"
           name="phoneNumber"
           formik={formik}
           type="tel"
         />
-        <Input label="Password" name="password" formik={formik} />
+        <Input label="رمز عبور" name="password" formik={formik} />
         {/* <BooleanCheckBox formik={formik} /> */}
         <button
           type="submit"
           disabled={!formik.isValid}
           className={!formik.isValid ? "disabeled-btn" : "form-btn"}
         >
-          Create Account
+          تائید ثبت نام{" "}
         </button>
         <Link to="/login">
           <p className="form-text">
             {" "}
-            Already <span>login</span>?
+            قبلا <span>ثبت نام</span> کردید؟{" "}
           </p>
         </Link>
       </form>

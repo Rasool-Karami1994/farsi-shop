@@ -50,6 +50,7 @@
   width: 80%;
   height: 100vh;
   display: flex;
+  flex-direction: row-reverse;
   align-items: flex-start;
   justify-content: space-evenly;
   margin-left: 160px;
@@ -68,6 +69,7 @@
   width: 550px;
   height: 180px;
   border-bottom: 1px solid var(--second-color);
+  direction: rtl;
 }
 .cart-item-img {
   width: 100px;
@@ -101,6 +103,7 @@
   border: 1px solid var(--second-color);
   width: 550px;
   padding: 10px;
+  direction: rtl;
 }
 .cart-Delivery-box h4 {
   color: #fa5418;
@@ -119,6 +122,7 @@
   justify-content: flex-start;
   width: 280px;
   height: 320px;
+  direction: rtl;
 }
 .cart-summery h4 {
   margin-bottom: 20px;
