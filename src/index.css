@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo&family=Katibeh&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Katibeh&display=swap");
 * {
+  list-style: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* direction: rtl; */
+  font-family: "Cairo", sans-serif;
   text-decoration: none;
-  list-style: none;
-  font-family: "Montserrat", sans-serif;
 }
+
 :root {
   --main-color: #041c2c;
   --second-color: #e5e5e5;
@@ -14,4 +17,8 @@
 body {
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }

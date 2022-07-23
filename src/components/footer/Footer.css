@@ -29,9 +29,9 @@ footer {
   margin: 10px;
   margin-right: 100px;
 }
-.visa-logo-footer {
-  width: 250px;
-  height: 80px;
+.zarinpal-logo {
+  width: 70px;
+  height: 70px;
   margin: 10px;
   margin-right: 100px;
 }
@@ -42,12 +42,6 @@ footer {
   .icons-container {
     margin-left: 15px;
   }
-  .visa-logo-footer {
-    width: 110px;
-    height: 70px;
-    margin: 10px;
-    margin-right: 80px;
-  }
 }
 @media screen and (max-width: 450px) {
   .logo-footer {
@@ -55,11 +49,5 @@ footer {
   }
   .icons-container {
     margin-left: 8px;
-  }
-  .visa-logo-footer {
-    width: 80px;
-    height: 50px;
-    margin: 10px;
-    /* margin-right: 80px; */
   }
 }

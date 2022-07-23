@@ -69,10 +69,10 @@ const Cart = () => {
             className="empty-cart-img"
           ></img>
           <h2 className="empty-cart-h2">
-            Your cart is empty <span>{" : )"}</span>
+            <span>{" ( :"}</span> متاسفانه سبد خرید شما خالیه
           </h2>
           <button className="empty-cart-btn" onClick={redirector}>
-            Go to shopping
+            رفتن به فروشگاه
           </button>
         </div>
       </div>

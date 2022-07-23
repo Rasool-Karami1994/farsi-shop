@@ -2,7 +2,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 import logo from "../../assets/img/logo.jpg";
-import visaLogo from "../../assets/img/visa-logo-png-453454.png";
+import zarinpal from "../../assets/img/zarinpal-badge.png";
 import "./Footer.css";
 const Footer = () => {
   return (
@@ -21,18 +21,8 @@ const Footer = () => {
           <SiGmail />
         </a>
       </div>
-      {/* <a
-        href="https://flyclipart.com/visa-logo-png-visa-logo-png-453454"
-        title="Visa Logo Png - Visa Logo PNG"
-        className="logo-footer"
-      >
-        <img
-          src="https://flyclipart.com/thumb2/visa-logo-png-453454.png"
-          width="350"
-          alt="visa"
-        />
-      </a> */}
-      <img className="visa-logo-footer" alt="logo" src={visaLogo}></img>
+
+      <img className="zarinpal-logo" alt="logo" src={zarinpal}></img>
       <img className="logo-footer" alt="logo" src={logo}></img>
     </footer>
   );

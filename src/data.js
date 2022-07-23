@@ -3,7 +3,7 @@ import bcrypt from "bcryptjs";
 export const products = [
   {
     id: 1,
-    name: "Winter body",
+    name: "نایکی",
     description: [
       { support: "گارانتی مادام العمر" },
       { support: "ارسال رایگان" },
@@ -17,7 +17,7 @@ export const products = [
   {
     id: 2,
 
-    name: "Adidas",
+    name: "رینبو",
     description: [{ support: "گارانتی مادام العمر" }, { support: "اورجینال" }],
     price: 110,
     offPrice: 100,
@@ -27,7 +27,7 @@ export const products = [
   {
     id: 3,
 
-    name: "Vans",
+    name: "سیمپل",
     description: [
       { support: "گارانتی مادام العمر" },
       { support: "اورجینال" },
@@ -41,7 +41,7 @@ export const products = [
   {
     id: 4,
 
-    name: "White",
+    name: "نایک اورنج",
     description: [
       { support: "گارانتی مادام العمر" },
       { support: "اورجینال" },
@@ -55,7 +55,7 @@ export const products = [
   {
     id: 5,
 
-    name: "Croopped-shoe",
+    name: "بلو وایلت",
     description: [
       { support: "گارانتی مادام العمر" },
       { support: "اورجینال" },

@@ -4,6 +4,7 @@ nav {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  direction: rtl;
 }
 ul {
   display: flex;
@@ -66,6 +67,6 @@ li a {
   align-items: center;
   font-size: 13px;
   position: relative;
-  left: 15%;
+  left: 2%;
   top: -20%;
 }

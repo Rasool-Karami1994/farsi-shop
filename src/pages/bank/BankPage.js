@@ -5,9 +5,9 @@ const BankPage = () => {
   return (
     <div className="bank-page-container">
       <img className="bank-page-img" src={bankImg} alt="Bank illustrator"></img>
-      <h4 className="bank-page-text">
-        You will be connected to the bank's payment portal in a few seconds...
-      </h4>
+      <h3 className="bank-page-text">
+        ...تاچند ثانیه دیگر به درگاه بانکی متصل می شوید
+      </h3>
     </div>
   );
 };

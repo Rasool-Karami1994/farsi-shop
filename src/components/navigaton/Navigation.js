@@ -9,7 +9,7 @@ import {
   useAuthContext,
   useAuthContextAction,
 } from "../../context/AuthProvider";
-import { FiLogOut } from "react-icons/fi";
+import { RiLogoutBoxLine } from "react-icons/ri";
 import { toast } from "react-toastify";
 const Navigation = () => {
   const user = useAuthContext();
@@ -20,7 +20,7 @@ const Navigation = () => {
   const logoutHandler = () => {
     setUser(false);
     localStorage.setItem("auth", JSON.stringify(false));
-    toast.success(`${user.name} loged out!`);
+    toast.success(`${user.name} از حساب خود خارج شدید`);
   };
 
   useEffect(() => {
@@ -44,7 +44,7 @@ const Navigation = () => {
             <NavLink to="/">
               <button className="logout-btn" onClick={() => logoutHandler()}>
                 <span>
-                  <FiLogOut />
+                  <RiLogoutBoxLine />
                 </span>
               </button>
             </NavLink>
