@@ -34,7 +34,7 @@ const HomePage = () => {
   const addToCart = (product) => {
     dispatch({ type: "ADD_TO_CART", payload: product });
     // console.log(item);
-    toast.success(`${product.name} added to Cart!`);
+    toast.success(`${product.name} به سبد خرید اضافه شد`);
   };
 
   useEffect(() => {
@@ -52,12 +52,9 @@ const HomePage = () => {
   return (
     <div className="home-page-container">
       <div className="hero-container">
-        <div className="hero-container-text">ALWAYES IN </div>
-        <div className="hero-container-text2"> ROTATION</div>
-        <div className="hero-container-text3">
-          Shoes alwayes $100 & under, featuring
-          <br></br>icons like the Nike Waffle debut.
-        </div>
+        <div className="hero-container-text">کیفیت واصالت</div>
+        <div className="hero-container-text2"> را از ما بخواهید</div>
+        <div className="hero-container-text3">راحتی شما مهمترین هدف ماست </div>
 
         <img className="hero" src={hero} alt="Hero-banner"></img>
       </div>
@@ -65,7 +62,7 @@ const HomePage = () => {
         {!products
           ? data.products.map((product) => (
               <div className="product-container" key={product.name}>
-                <span className="products-off">${product.discount}</span>
+                <span className="products-off">{product.discount} T</span>
                 <div className="product-card">
                   <img
                     className="product-img"
@@ -74,21 +71,21 @@ const HomePage = () => {
                   ></img>
                   <p className="product-name">{product.name}</p>
                   <div className="price-container">
-                    <p className="product-price">${product.offPrice}</p>
-                    <p className="product-offprice">${product.price}</p>
+                    <p className="product-offprice">{product.price} تومان</p>
+                    <p className="product-price">{product.offPrice} تومان</p>
                   </div>
                   <button
                     className="products-btn"
                     onClick={() => addToCart(product)}
                   >
-                    Add to cart
+                    افزودن به سبد
                   </button>
                 </div>
               </div>
             ))
           : products.map((product) => (
               <div className="product-container" key={product.name}>
-                <span className="products-off">${product.discount}</span>
+                <span className="products-off">{product.discount} T</span>
                 <div className="product-card">
                   <img
                     className="product-img"
@@ -97,8 +94,8 @@ const HomePage = () => {
                   ></img>
                   <p className="product-name">{product.name}</p>
                   <div className="price-container">
-                    <p className="product-price">${product.offPrice}</p>
-                    <p className="product-offprice">${product.price}</p>
+                    <p className="product-offprice">{product.price} تومان</p>
+                    <p className="product-price">{product.offPrice} تومان</p>
                   </div>
                   <button
                     className="products-btn"

@@ -64,7 +64,6 @@
   margin-bottom: 12px;
   color: #ef3939;
   font-weight: 800;
-  margin-right: 5px;
 }
 .products-btn {
   margin-bottom: 12px;
@@ -80,8 +79,10 @@
 }
 .price-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  direction: rtl;
 }
 .product-offprice {
   margin-bottom: 10px;
@@ -136,6 +137,7 @@
   color: #fff;
   font-size: 48px;
   font-weight: 950;
+  direction: rtl;
 }
 .hero-container-text2 {
   position: absolute;
@@ -144,16 +146,18 @@
   color: #fff;
   font-size: 48px;
   font-weight: 1000;
-  margin-top: 5px;
+  margin-top: 10px;
+  direction: rtl;
 }
 .hero-container-text3 {
   position: absolute;
   top: 40%;
-  left: 5%;
+  left: 9%;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
   margin-top: 10px;
+  direction: rtl;
 }
 @media only screen and (max-width: 1000px) {
   .hero-container {
@@ -181,7 +185,7 @@
     color: #fff;
     font-size: 16px;
     font-weight: 500;
-    margin-top: 15px;
+    margin-top: 35px;
   }
 }
 @media only screen and (max-width: 780px) {
@@ -210,7 +214,7 @@
     color: #fff;
     font-size: 16px;
     font-weight: 500;
-    margin-top: 15px;
+    margin-top: 35px;
   }
 }
 @media only screen and (max-width: 650px) {
