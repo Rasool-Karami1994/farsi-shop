@@ -3,24 +3,22 @@ import { NavLink } from "react-router-dom";
 import "./Navigation.css";
 import logo from "../../assets/img/logo.jpg";
 import { FaShoppingCart } from "react-icons/fa";
-import { FiLogIn } from "react-icons/fi";
 import { useCartContext } from "../../context/CartProvider";
 import {
   useAuthContext,
   useAuthContextAction,
 } from "../../context/AuthProvider";
 import { RiLogoutBoxLine } from "react-icons/ri";
-import { toast } from "react-toastify";
+import { HiUserCircle } from "react-icons/hi";
+
 const Navigation = () => {
   const user = useAuthContext();
   const { cart } = useCartContext();
   const setUser = useAuthContextAction();
-  // console.log(user);
 
   const logoutHandler = () => {
     setUser(false);
     localStorage.setItem("auth", JSON.stringify(false));
-    toast.success(`${user.name} از حساب خود خارج شدید`);
   };
 
   useEffect(() => {
@@ -54,13 +52,13 @@ const Navigation = () => {
             {user ? (
               <NavLink to="/logout">
                 <span>
-                  <FiLogIn />
+                  <HiUserCircle />
                 </span>
               </NavLink>
             ) : (
               <NavLink to="/signup">
                 <span>
-                  <FiLogIn />
+                  <HiUserCircle />
                 </span>
               </NavLink>
             )}

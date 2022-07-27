@@ -109,6 +109,13 @@ const Cart = () => {
                 <div className="cart-item-control">
                   <div className="cart-item-qnt-control">
                     <button
+                      className="cart-control-icons"
+                      onClick={() => incrementHandler(item)}
+                    >
+                      <MdKeyboardArrowUp />
+                    </button>
+                    <p>{item.quantity}</p>
+                    <button
                       onClick={() => decrementHandler(item)}
                       className={
                         item.quantity === 1
@@ -117,13 +124,6 @@ const Cart = () => {
                       }
                     >
                       <MdKeyboardArrowDown />
-                    </button>
-                    <p>{item.quantity}</p>
-                    <button
-                      className="cart-control-icons"
-                      onClick={() => incrementHandler(item)}
-                    >
-                      <MdKeyboardArrowUp />
                     </button>
                   </div>
                   <button

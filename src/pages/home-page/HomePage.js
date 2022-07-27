@@ -33,8 +33,6 @@ const HomePage = () => {
   const dispatch = useCartContextActions();
   const addToCart = (product) => {
     dispatch({ type: "ADD_TO_CART", payload: product });
-    // console.log(item);
-    toast.success(`${product.name} به سبد خرید اضافه شد`);
   };
 
   useEffect(() => {

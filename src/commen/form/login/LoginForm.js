@@ -6,6 +6,8 @@ import { loginUser } from "../../../services/loginUser";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { useAuthContextAction } from "../../../context/AuthProvider";
+import { IoIosArrowBack } from "react-icons/io";
+
 const initialValues = {
   email: "",
   password: "",
@@ -22,6 +24,9 @@ const LoginForm = () => {
   const navigate = useNavigate();
   const setUser = useAuthContextAction();
   const [error, setError] = useState(null);
+  const redirector = () => {
+    navigate("/");
+  };
 
   const onSubmit = async (values) => {
     console.log(values);
@@ -38,7 +43,6 @@ const LoginForm = () => {
       console.log(data.name);
       setError(null);
       navigate(-2);
-      toast.success(`${data.name}عزیز خوش آمدی`);
     } catch (error) {
       console.log(error.response.data.message);
       setError(error.response.data.message);
@@ -56,6 +60,10 @@ const LoginForm = () => {
 
   return (
     <div className="page-container">
+      <button onClick={redirector} className="back-button">
+        <IoIosArrowBack />
+      </button>
+
       <form onSubmit={formik.handleSubmit}>
         <h2 className="form-h2">خوش آمدید</h2>
         <p className="form-text">لطفا اطلاعات خود را وارد کنید</p>

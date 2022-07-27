@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* direction: rtl; */
   font-family: "Cairo", sans-serif;
   text-decoration: none;
 }
@@ -14,11 +13,4 @@
   --main-color: #041c2c;
   --second-color: #e5e5e5;
 }
-body {
-  background-color: #fff;
-  font-family: "Montserrat", sans-serif;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+
