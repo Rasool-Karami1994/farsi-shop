@@ -58,6 +58,12 @@ const CartReducer = (state, action) => {
         total: state.total - action.payload.offPrice,
       };
     }
+    case "LOAD_CARTITEMS": {
+      return {
+        cart: [...action.payload.cart],
+        total: state.total - action.payload.offPrice,
+      };
+    }
 
     default:
       return state;

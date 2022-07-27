@@ -5,7 +5,6 @@ import * as data from "../../data";
 // import axios from "axios";
 import hero from "../../assets/img/nike-just-do-it.jpg";
 import { useMediaPredicate } from "react-media-hook";
-import { toast } from "react-toastify";
 import { useCartContextActions } from "../../context/CartProvider";
 import { getProducts } from "../../services/getProducts";
 
@@ -32,8 +31,25 @@ const HomePage = () => {
   ];
   const dispatch = useCartContextActions();
   const addToCart = (product) => {
+    function addItemToLocalStorage() {
+      var existingEntries = JSON.parse(localStorage.getItem("cartItems"));
+      if (existingEntries == null) existingEntries = [];
+
+      existingEntries.push(product);
+      localStorage.setItem("cartItems", JSON.stringify(existingEntries));
+    }
+
     dispatch({ type: "ADD_TO_CART", payload: product });
+    addItemToLocalStorage();
   };
+
+  useEffect(() => {
+    const savedCartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    dispatch({
+      type: "LOAD_CARTITEMS",
+      payload: { cart: savedCartItems },
+    });
+  });
 
   useEffect(() => {
     if (products) {
