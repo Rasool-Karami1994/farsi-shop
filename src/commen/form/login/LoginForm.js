@@ -18,7 +18,7 @@ const validationSchema = Yup.object({
     .required("No password provided.")
     .min(8, "min length is 8 char!"),
 });
-const LoginForm = (props) => {
+const LoginForm = () => {
   const navigate = useNavigate();
   const setUser = useAuthContextAction();
   const [error, setError] = useState(null);

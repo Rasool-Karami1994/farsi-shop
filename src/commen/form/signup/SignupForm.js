@@ -29,9 +29,6 @@ const validationSchema = Yup.object({
   phoneNumber: Yup.string()
     .required("Phone Number is required!")
     .matches(/^[0-9]{11}$/, "Invalid phone number"),
-  // terms: Yup.boolean()
-  //   .required("The terms and conditions must be accepted.")
-  //   .oneOf([true], "The terms and conditions must be accepted."),
 });
 
 const SignupForm = () => {

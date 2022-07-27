@@ -69,7 +69,7 @@ export const products = [
   {
     id: 6,
 
-    name: "Blues",
+    name: "پرفکت",
     description: [
       { support: "گارانتی مادام العمر" },
       { support: "اورجینال" },

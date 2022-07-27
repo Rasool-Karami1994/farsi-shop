@@ -47,7 +47,7 @@ const HomePage = () => {
         console.log(error);
       }
     }
-  }, []);
+  }, [products]);
 
   return (
     <div className="home-page-container">
@@ -110,7 +110,7 @@ const HomePage = () => {
       <div className="slider">
         {smallerThan450 ? (
           <SimpleImageSlider
-            width={300}
+            width="70%"
             height={200}
             images={images}
             showBullets={true}
@@ -118,8 +118,8 @@ const HomePage = () => {
           />
         ) : (
           <SimpleImageSlider
-            width={1200}
-            height={640}
+            width="70%"
+            height={500}
             images={images}
             showBullets={true}
             showNavs={true}
